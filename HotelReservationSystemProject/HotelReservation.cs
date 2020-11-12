@@ -11,7 +11,6 @@ namespace HotelReservationSystemProject
         /// </summary>
         public string hotelName;
         public int weekDayRegularRates;
-        public int weekEndRegularRates;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="Hotel"/> class.
@@ -19,11 +18,10 @@ namespace HotelReservationSystemProject
         /// <param name="hotelName">Name of the hotel.</param>
         /// <param name="weekDayRegularRates">The week day regular rates.</param>
         /// <param name="weekEndRegularRates">The week end regular rates.</param>
-        public HotelReservation(string hotelName, int weekDayRegularRates, int weekEndRegularRates)
+        public HotelReservation(string hotelName, int weekDayRegularRates)
         {
             this.hotelName = hotelName;
             this.weekDayRegularRates = weekDayRegularRates;
-            this.weekEndRegularRates = weekEndRegularRates;
         }
 
         /// <summary>
@@ -45,15 +43,6 @@ namespace HotelReservationSystemProject
         }
 
         /// <summary>
-        /// Sets the week end regular rates.
-        /// </summary>
-        /// <param name="weekEndRegularRates">The week end regular rates.</param>
-        public void SetWeekEndRegularRates(int weekEndRegularRates)
-        {
-            this.weekEndRegularRates = weekEndRegularRates;
-        }
-
-        /// <summary>
         /// Gets the name of the hotel.
         /// </summary>
         /// <returns></returns>
@@ -72,15 +61,6 @@ namespace HotelReservationSystemProject
         }
 
         /// <summary>
-        /// Gets the week end regular rates.
-        /// </summary>
-        /// <returns></returns>
-        public int GetWeekEndRegularRates()
-        {
-            return weekEndRegularRates;
-        }
-
-        /// <summary>
         /// Converts to string.
         /// </summary>
         /// <returns>
@@ -88,7 +68,7 @@ namespace HotelReservationSystemProject
         /// </returns>
         public string ToString()
         {
-            return "hotelName : " + hotelName + " || " + "WeekDayRegularRates : " + weekDayRegularRates + " || " + "WeekEndRegularRates : " + weekEndRegularRates;
+            return "hotelName : " + hotelName + " || " + "WeekDayRegularRates : " + weekDayRegularRates;
         }
     }
 }

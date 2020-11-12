@@ -13,9 +13,9 @@ namespace HotelReservationSystemProject
             Console.WriteLine("Welcome to Hotel Reservation System");
             /// An object is created for hotel class 
             /// Invoking during object creation
-            HotelReservation hotelOne = new HotelReservation("LakeWood", 110, 90);
-            HotelReservation hotelTwo = new HotelReservation("BridgeWood", 160, 60);
-            HotelReservation hotelThree = new HotelReservation("RidgeWood", 220, 150);
+            HotelReservation hotelOne = new HotelReservation("LakeWood", 110);
+            HotelReservation hotelTwo = new HotelReservation("BridgeWood", 160);
+            HotelReservation hotelThree = new HotelReservation("RidgeWood", 220);
 
             /// printing hotel names and regular rates
             Console.WriteLine(hotelOne.ToString());
