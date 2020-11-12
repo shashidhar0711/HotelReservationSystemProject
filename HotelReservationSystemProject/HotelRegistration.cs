@@ -19,7 +19,7 @@ namespace HotelReservationSystemProject
         {
             /// Adding hotel details in to hotel list
             hotelList.Add(new Hotel("LakeWood", 110, 90));
-            hotelList.Add(new Hotel("BridgeWood", 160, 60));
+            hotelList.Add(new Hotel("BridgeWood", 150, 50));
             hotelList.Add(new Hotel("RidgeWood", 220, 150));
 
             /// Iterating through list
