@@ -22,6 +22,8 @@ namespace HotelReservationSystemProject
             string checkToDate = Console.ReadLine();
             DateTime startingDate = DateTime.Parse(checkFromDate);
             DateTime endingDate = DateTime.Parse(checkToDate);
+
+            /// Calling a method to find cheapest cost of hotel
             hotelRegistration.FindingCheapestHotel(startingDate, endingDate);
         }
     }

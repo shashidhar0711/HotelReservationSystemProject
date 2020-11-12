@@ -21,9 +21,9 @@ namespace HotelReservationSystemProject
         public void AddHotel()
         {
             /// Adding hotel details in to hotel list
-            hotelList.Add(new Hotel("LakeWood", 110, 90));
-            hotelList.Add(new Hotel("BridgeWood", 160, 60));
-            hotelList.Add(new Hotel("RidgeWood", 220, 150));
+            hotelList.Add(new Hotel("LakeWood", 110));
+            hotelList.Add(new Hotel("BridgeWood", 160));
+            hotelList.Add(new Hotel("RidgeWood", 220));
 
             /// Iterating through list
             foreach(var hotels in hotelList)
