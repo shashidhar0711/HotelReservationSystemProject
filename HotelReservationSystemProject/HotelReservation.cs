@@ -140,7 +140,7 @@ namespace HotelReservationSystemProject
             /// Iterating through list and finding minimum cost
             foreach (var hotels in minimumCostList)
             {
-                if (hotels.rating == minimumCostList.Max(s => s.rating))
+                if (hotels.rating == minimumCostList.Min(s => s.rating))
                 {
                     Console.WriteLine("------------------Cheapest Cost Hotel-----------------------------");
                     Console.WriteLine("Hotel Name : " + hotels.hotelName + "\nTotal Cost : " + hotels.totalCost + "\nRatings : " + hotels.rating);
